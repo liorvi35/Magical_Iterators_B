@@ -270,7 +270,7 @@
 					/**
 					* side cross index
 					*/
-					size_t side_index;
+					size_t side_cross_index;
 					
 					/**
 					* default ctor

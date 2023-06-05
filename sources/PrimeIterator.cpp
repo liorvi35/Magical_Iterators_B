@@ -64,7 +64,7 @@ bool MagicalContainer::PrimeIterator::operator>(const PrimeIterator& pi) const
 
 int MagicalContainer::PrimeIterator::operator*()
 {
-	return *(*container).primes[index];
+	return *(*(this->container)).primes[this->index];
 }
 
 // advancing operator
@@ -89,7 +89,7 @@ MagicalContainer::PrimeIterator MagicalContainer::PrimeIterator::begin() const
 // end
 MagicalContainer::PrimeIterator MagicalContainer::PrimeIterator::end() const
 {
-	return PrimeIterator(*(this->container), (*container).primes.size());
+	return PrimeIterator(*(this->container), (*(this->container)).primes.size());
 }
 
 
