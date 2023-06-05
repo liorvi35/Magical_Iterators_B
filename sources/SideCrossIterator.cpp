@@ -74,11 +74,11 @@ MagicalContainer::SideCrossIterator& MagicalContainer::SideCrossIterator::operat
 	
 	if (this->index % 2 != 0)
 	{
-		side_index = (*(this->container)).container.size() - 1 - this->index / 2;
+		side_cross_index = (*(this->container)).container.size() - 1 - this->index / 2;
 	}
 	else
 	{
-		side_index = this->index / 2;
+		side_cross_index = this->index / 2;
 	}
 
 	return (*this);
